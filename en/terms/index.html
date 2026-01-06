@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iron Riders Terms of Service - Rules for using the application">
+    <title>Terms of Service - Iron Riders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --primary: #e63946; --bg-dark: #1a1a2e; --bg-darker: #0f0f1a; --text: #ffffff; --text-muted: #a0a0b0; --card-bg: rgba(255, 255, 255, 0.05); --border: rgba(255, 255, 255, 0.1); }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg-darker); color: var(--text); line-height: 1.7; }
+        header { padding: 1rem 2rem; background: rgba(15, 15, 26, 0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+        nav { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.25rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        .nav-right { display: flex; align-items: center; gap: 1.5rem; }
+        .back-link { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; transition: color 0.3s; }
+        .back-link:hover { color: var(--text); }
+        .lang-switcher { display: flex; gap: 0.5rem; }
+        .lang-switcher a { padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.85rem; color: var(--text-muted); text-decoration: none; }
+        .lang-switcher a.active { background: var(--primary); color: white; }
+        main { max-width: 900px; margin: 0 auto; padding: 3rem 2rem 6rem; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .last-updated { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 3rem; }
+        .intro { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+        h2 { font-size: 1.5rem; font-weight: 600; margin-top: 3rem; margin-bottom: 1rem; color: var(--primary); }
+        h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        p { margin-bottom: 1rem; color: var(--text-muted); }
+        ul, ol { margin-bottom: 1rem; padding-left: 1.5rem; color: var(--text-muted); }
+        li { margin-bottom: 0.5rem; }
+        strong { color: var(--text); font-weight: 600; }
+        .highlight-box { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+        .highlight-box h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--text); }
+        .warning-box { background: rgba(230, 57, 70, 0.1); border: 1px solid rgba(230, 57, 70, 0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+        .warning-box h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--primary); }
+        .contact-box { background: linear-gradient(135deg, rgba(230, 57, 70, 0.1) 0%, rgba(230, 57, 70, 0.05) 100%); border: 1px solid rgba(230, 57, 70, 0.2); border-radius: 12px; padding: 2rem; margin-top: 3rem; }
+        .contact-box h3 { color: var(--primary); margin-top: 0; }
+        .contact-box a { color: var(--primary); text-decoration: none; }
+        .contact-box a:hover { text-decoration: underline; }
+        footer { padding: 2rem; text-align: center; border-top: 1px solid var(--border); }
+        footer p { font-size: 0.85rem; }
+        footer a { color: var(--text-muted); text-decoration: none; }
+        footer a:hover { color: var(--text); }
+        @media (max-width: 640px) { h1 { font-size: 1.75rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/en/" class="logo">Iron Riders</a>
+            <div class="nav-right">
+                <a href="/en/" class="back-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    Home
+                </a>
+                <div class="lang-switcher">
+                    <a href="/terms/">TR</a>
+                    <a href="/en/terms/" class="active">EN</a>
+                    <a href="/de/terms/">DE</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Terms of Service</h1>
+        <p class="last-updated">Last updated: January 6, 2025</p>
+
+        <p class="intro">By using the Iron Riders mobile application ("App"), you agree to the following terms of service. Please read these terms carefully. If you do not agree to these terms, do not use the application.</p>
+
+        <h2>1. Service Description</h2>
+        <p>Iron Riders is a group ride management application designed for motorcycle clubs. The app provides the following services:</p>
+        <ul>
+            <li>Group ride planning and management</li>
+            <li>Live location tracking and sharing</li>
+            <li>Club creation and member management</li>
+            <li>SOS emergency system</li>
+            <li>Stop requests and communication</li>
+            <li>Ride statistics and badges</li>
+        </ul>
+
+        <h2>2. Account Creation and Security</h2>
+
+        <h3>2.1 Registration Requirements</h3>
+        <ul>
+            <li>You must be 18 years or older to use the application</li>
+            <li>You must register with a valid phone number</li>
+            <li>You are obligated to provide accurate and current information</li>
+        </ul>
+
+        <h3>2.2 Account Security</h3>
+        <ul>
+            <li>You are responsible for the security of your account</li>
+            <li>Do not share your account with others</li>
+            <li>Notify us immediately if you notice suspicious activity</li>
+        </ul>
+
+        <h2>3. Usage Rules</h2>
+
+        <h3>3.1 Acceptable Use</h3>
+        <p>You may use the application for:</p>
+        <ul>
+            <li>Planning and managing motorcycle group rides</li>
+            <li>Communicating with club members</li>
+            <li>Sharing location during rides</li>
+            <li>Using the SOS system in emergencies</li>
+        </ul>
+
+        <h3>3.2 Prohibited Use</h3>
+        <div class="warning-box">
+            <h4>The following behaviors are strictly prohibited:</h4>
+            <ul>
+                <li>Sharing false or misleading information</li>
+                <li>Using the SOS system unnecessarily or falsely</li>
+                <li>Harassing or threatening other users</li>
+                <li>Using the app for illegal activities</li>
+                <li>Compromising system security or attempting to hack</li>
+                <li>Sharing spam or unwanted content</li>
+                <li>Impersonating another person</li>
+                <li>Using the app for commercial purposes without permission</li>
+            </ul>
+        </div>
+
+        <h2>4. Location Services</h2>
+
+        <div class="highlight-box">
+            <h4>Important Information</h4>
+            <p>The app requires location permission for its core functions. Background location permission is required for the live ride feature. Your location data:</p>
+            <ul>
+                <li>Is only shared with your club members during rides</li>
+                <li>Is automatically shared in SOS situations</li>
+                <li>Is not collected in the background outside of rides</li>
+            </ul>
+        </div>
+
+        <h2>5. Club and Ride Management</h2>
+
+        <h3>5.1 Creating a Club</h3>
+        <ul>
+            <li>Email or phone verification is required to create a club</li>
+            <li>Club name must be appropriate and not misleading</li>
+            <li>The club founder is responsible for club activities</li>
+        </ul>
+
+        <h3>5.2 Ride Leader Responsibilities</h3>
+        <ul>
+            <li>Plan rides safely</li>
+            <li>Inform participants</li>
+            <li>Take appropriate action in emergencies</li>
+            <li>Evaluate stop requests</li>
+        </ul>
+
+        <h3>5.3 Participant Responsibilities</h3>
+        <ul>
+            <li>Follow traffic rules</li>
+            <li>Follow ride leader's instructions</li>
+            <li>Use SOS system correctly in emergencies</li>
+            <li>Respect other participants</li>
+        </ul>
+
+        <h2>6. Emergency (SOS) System</h2>
+
+        <div class="warning-box">
+            <h4>SOS System Usage</h4>
+            <ul>
+                <li>SOS button should ONLY be used in real emergencies</li>
+                <li>Sending false SOS signals may result in account suspension</li>
+                <li>SOS does not replace professional emergency services (911/112)</li>
+                <li>Always call official emergency services in serious accidents</li>
+            </ul>
+        </div>
+
+        <h2>7. Intellectual Property</h2>
+        <p>All content, design, logos, software, and other materials in the app are owned by or licensed to Iron Riders. Unauthorized copying, distribution, or modification is prohibited.</p>
+
+        <h2>8. Limitation of Liability</h2>
+
+        <div class="highlight-box">
+            <h4>Important Warning</h4>
+            <p>Iron Riders:</p>
+            <ul>
+                <li>Is not responsible for accidents, injuries, or deaths occurring during motorcycle rides</li>
+                <li>Does not guarantee 100% accuracy of location data</li>
+                <li>Does not guarantee uninterrupted operation of third-party services (maps, notifications)</li>
+                <li>Is not responsible for disputes between users</li>
+                <li>Does not accept liability for technical failures or data loss</li>
+            </ul>
+        </div>
+
+        <p><strong>Motorcycle riding is a dangerous activity.</strong> By using our app, you accept these risks. Always prioritize safe riding, use protective gear, and follow traffic rules.</p>
+
+        <h2>9. Account Suspension and Termination</h2>
+
+        <h3>9.1 By Us</h3>
+        <p>We may suspend or delete your account in the following cases:</p>
+        <ul>
+            <li>Violation of terms of service</li>
+            <li>Sending false SOS signals</li>
+            <li>Harassment of other users</li>
+            <li>Illegal activities</li>
+        </ul>
+
+        <h3>9.2 By You</h3>
+        <p>You can delete your account at any time. To delete your account, use the in-app option or contact <a href="mailto:uygaruludag@istechlabs.com">uygaruludag@istechlabs.com</a>.</p>
+
+        <h2>10. Changes</h2>
+        <p>We may update these terms of service from time to time. When significant changes are made:</p>
+        <ul>
+            <li>You will receive a notification in the app</li>
+            <li>You will be informed via email</li>
+            <li>Continuing to use the app after changes are published means you accept the new terms</li>
+        </ul>
+
+        <h2>11. Dispute Resolution</h2>
+        <p>Disputes arising from these terms:</p>
+        <ul>
+            <li>Will first seek amicable resolution</li>
+            <li>If not resolved, courts of the Republic of Turkey have jurisdiction</li>
+            <li>Turkish law applies</li>
+        </ul>
+
+        <h2>12. Contact</h2>
+        <div class="contact-box">
+            <h3>Have questions?</h3>
+            <p>For questions about the terms of service, please contact us:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:uygaruludag@istechlabs.com">uygaruludag@istechlabs.com</a></li>
+            </ul>
+        </div>
+
+        <h2>13. Final Provisions</h2>
+        <ul>
+            <li>If any provision of these terms is deemed invalid, other provisions remain valid</li>
+            <li>Failure to exercise any right does not constitute waiver of that right</li>
+            <li>These terms constitute the entire agreement between you and us</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Istech Yazılım ve Danışmanlık · <a href="/en/privacy/">Privacy</a> · <a href="/en/terms/">Terms</a> · <a href="/en/">Home</a></p>
+    </footer>
+</body>
+</html>

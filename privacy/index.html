@@ -3,18 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Iron Riders Gizlilik Politikasi - Verilerinizi nasil topladigimizi ve kullandigimizi ogrenin">
-    <title>Gizlilik Politikasi - Iron Riders</title>
+    <meta name="description" content="Iron Riders Gizlilik Politikası - Verilerinizi nasıl topladığımızı ve kullandığımızı öğrenin">
+    <title>Gizlilik Politikası - Iron Riders</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --primary: #e63946;
             --bg-dark: #1a1a2e;
@@ -24,14 +19,12 @@
             --card-bg: rgba(255, 255, 255, 0.05);
             --border: rgba(255, 255, 255, 0.1);
         }
-
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--bg-darker);
             color: var(--text);
             line-height: 1.7;
         }
-
         header {
             padding: 1rem 2rem;
             background: rgba(15, 15, 26, 0.95);
@@ -41,7 +34,6 @@
             top: 0;
             z-index: 100;
         }
-
         nav {
             max-width: 900px;
             margin: 0 auto;
@@ -49,14 +41,17 @@
             justify-content: space-between;
             align-items: center;
         }
-
         .logo {
             font-size: 1.25rem;
             font-weight: 700;
             color: var(--primary);
             text-decoration: none;
         }
-
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
         .back-link {
             color: var(--text-muted);
             text-decoration: none;
@@ -66,29 +61,37 @@
             gap: 0.5rem;
             transition: color 0.3s;
         }
-
-        .back-link:hover {
-            color: var(--text);
+        .back-link:hover { color: var(--text); }
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
         }
-
+        .lang-switcher a {
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+        .lang-switcher a.active {
+            background: var(--primary);
+            color: white;
+        }
         main {
             max-width: 900px;
             margin: 0 auto;
             padding: 3rem 2rem 6rem;
         }
-
         h1 {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
         }
-
         .last-updated {
             color: var(--text-muted);
             font-size: 0.9rem;
             margin-bottom: 3rem;
         }
-
         .intro {
             font-size: 1.1rem;
             color: var(--text-muted);
@@ -96,7 +99,6 @@
             padding-bottom: 2rem;
             border-bottom: 1px solid var(--border);
         }
-
         h2 {
             font-size: 1.5rem;
             font-weight: 600;
@@ -104,34 +106,20 @@
             margin-bottom: 1rem;
             color: var(--primary);
         }
-
         h3 {
             font-size: 1.1rem;
             font-weight: 600;
             margin-top: 1.5rem;
             margin-bottom: 0.75rem;
         }
-
-        p {
-            margin-bottom: 1rem;
-            color: var(--text-muted);
-        }
-
+        p { margin-bottom: 1rem; color: var(--text-muted); }
         ul, ol {
             margin-bottom: 1rem;
             padding-left: 1.5rem;
             color: var(--text-muted);
         }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        strong {
-            color: var(--text);
-            font-weight: 600;
-        }
-
+        li { margin-bottom: 0.5rem; }
+        strong { color: var(--text); font-weight: 600; }
         .highlight-box {
             background: var(--card-bg);
             border: 1px solid var(--border);
@@ -139,39 +127,32 @@
             padding: 1.5rem;
             margin: 1.5rem 0;
         }
-
         .highlight-box h4 {
             font-size: 1rem;
             font-weight: 600;
             margin-bottom: 0.75rem;
             color: var(--text);
         }
-
         .data-table {
             width: 100%;
             border-collapse: collapse;
             margin: 1.5rem 0;
         }
-
-        .data-table th,
-        .data-table td {
+        .data-table th, .data-table td {
             padding: 1rem;
             text-align: left;
             border-bottom: 1px solid var(--border);
         }
-
         .data-table th {
             background: var(--card-bg);
             color: var(--text);
             font-weight: 600;
             font-size: 0.9rem;
         }
-
         .data-table td {
             color: var(--text-muted);
             font-size: 0.9rem;
         }
-
         .contact-box {
             background: linear-gradient(135deg, rgba(230, 57, 70, 0.1) 0%, rgba(230, 57, 70, 0.05) 100%);
             border: 1px solid rgba(230, 57, 70, 0.2);
@@ -179,49 +160,29 @@
             padding: 2rem;
             margin-top: 3rem;
         }
-
         .contact-box h3 {
             color: var(--primary);
             margin-top: 0;
         }
-
         .contact-box a {
             color: var(--primary);
             text-decoration: none;
         }
-
-        .contact-box a:hover {
-            text-decoration: underline;
-        }
-
+        .contact-box a:hover { text-decoration: underline; }
         footer {
             padding: 2rem;
             text-align: center;
             border-top: 1px solid var(--border);
         }
-
-        footer p {
-            font-size: 0.85rem;
-        }
-
+        footer p { font-size: 0.85rem; }
         footer a {
             color: var(--text-muted);
             text-decoration: none;
         }
-
-        footer a:hover {
-            color: var(--text);
-        }
-
+        footer a:hover { color: var(--text); }
         @media (max-width: 640px) {
-            h1 {
-                font-size: 1.75rem;
-            }
-
-            .data-table {
-                display: block;
-                overflow-x: auto;
-            }
+            h1 { font-size: 1.75rem; }
+            .data-table { display: block; overflow-x: auto; }
         }
     </style>
 </head>
@@ -229,206 +190,212 @@
     <header>
         <nav>
             <a href="/" class="logo">Iron Riders</a>
-            <a href="/" class="back-link">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M19 12H5M12 19l-7-7 7-7"/>
-                </svg>
-                Ana Sayfa
-            </a>
+            <div class="nav-right">
+                <a href="/" class="back-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Ana Sayfa
+                </a>
+                <div class="lang-switcher">
+                    <a href="/privacy/" class="active">TR</a>
+                    <a href="/en/privacy/">EN</a>
+                    <a href="/de/privacy/">DE</a>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h1>Gizlilik Politikasi</h1>
-        <p class="last-updated">Son guncelleme: 6 Ocak 2025</p>
+        <h1>Gizlilik Politikası</h1>
+        <p class="last-updated">Son güncelleme: 6 Ocak 2025</p>
 
         <p class="intro">
-            Iron Riders ("biz", "bizim" veya "uygulama") olarak gizliliginize onem veriyoruz. Bu Gizlilik Politikasi,
-            mobil uygulamamizi kullandiginizda hangi bilgileri topladigimizi, nasil kullandigimizi ve korudugumuzu aciklar.
+            Iron Riders ("biz", "bizim" veya "uygulama") olarak gizliliğinize önem veriyoruz. Bu Gizlilik Politikası,
+            mobil uygulamamızı kullandığınızda hangi bilgileri topladığımızı, nasıl kullandığımızı ve koruduğumuzu açıklar.
         </p>
 
-        <h2>1. Topladigimiz Bilgiler</h2>
+        <h2>1. Topladığımız Bilgiler</h2>
 
-        <h3>1.1 Kisisel Bilgiler</h3>
-        <p>Uygulamayi kullanmak icin asagidaki bilgileri toplariz:</p>
+        <h3>1.1 Kişisel Bilgiler</h3>
+        <p>Uygulamayı kullanmak için aşağıdaki bilgileri toplarız:</p>
 
         <table class="data-table">
             <thead>
                 <tr>
-                    <th>Veri Turu</th>
-                    <th>Ornekler</th>
-                    <th>Amac</th>
+                    <th>Veri Türü</th>
+                    <th>Örnekler</th>
+                    <th>Amaç</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td><strong>Hesap Bilgileri</strong></td>
-                    <td>Ad, telefon numarasi, e-posta adresi</td>
-                    <td>Hesap olusturma ve kimlik dogrulama</td>
+                    <td>Ad, telefon numarası, e-posta adresi</td>
+                    <td>Hesap oluşturma ve kimlik doğrulama</td>
                 </tr>
                 <tr>
                     <td><strong>Profil Bilgileri</strong></td>
-                    <td>Profil resmi, kulup uyeligi</td>
-                    <td>Sosyal ozellikler ve taninirlik</td>
+                    <td>Profil resmi, kulüp üyeliği</td>
+                    <td>Sosyal özellikler ve tanınırlık</td>
                 </tr>
                 <tr>
                     <td><strong>Acil Durum Bilgileri</strong></td>
-                    <td>Acil durum kontagi (ad, telefon), kan grubu</td>
-                    <td>Guvenlik ve acil durumlarda iletisim</td>
+                    <td>Acil durum kontağı (ad, telefon), kan grubu</td>
+                    <td>Güvenlik ve acil durumlarda iletişim</td>
                 </tr>
                 <tr>
-                    <td><strong>Arac Bilgileri</strong></td>
-                    <td>Motosiklet markasi, modeli, yili, rengi, plakasi</td>
-                    <td>Profil ve surus koordinasyonu</td>
+                    <td><strong>Araç Bilgileri</strong></td>
+                    <td>Motosiklet markası, modeli, yılı, rengi, plakası</td>
+                    <td>Profil ve sürüş koordinasyonu</td>
                 </tr>
                 <tr>
-                    <td><strong>Donanim Bilgileri</strong></td>
+                    <td><strong>Donanım Bilgileri</strong></td>
                     <td>Kask, koruyucu ekipman, interkom, kamera</td>
-                    <td>Guvenlik bilgisi ve surus koordinasyonu</td>
+                    <td>Güvenlik bilgisi ve sürüş koordinasyonu</td>
                 </tr>
             </tbody>
         </table>
 
         <h3>1.2 Konum Verileri</h3>
-        <p>Uygulamamizin temel islevi grup surus takibi oldugu icin konum verilerinizi toplariz:</p>
+        <p>Uygulamamızın temel işlevi grup sürüş takibi olduğu için konum verilerinizi toplarız:</p>
 
         <div class="highlight-box">
-            <h4>Konum Izni Hakkinda</h4>
+            <h4>Konum İzni Hakkında</h4>
             <ul>
-                <li><strong>Kullanim Sirasinda Konum:</strong> Uygulamayi aktif kullanirken konumunuzu aliriz.</li>
-                <li><strong>Arka Plan Konumu:</strong> Canli surus sirasinda uygulama arka plandayken de konum takibi yapariz. Bu, diger katilimcilarin sizi haritada gormesi icin gereklidir.</li>
-                <li><strong>Konum Hassasiyeti:</strong> GPS koordinatlari (enlem, boylam), hiz ve yon bilgisi.</li>
-                <li><strong>Guncelleme Sikligi:</strong> Canli surus sirasinda her 5 saniyede bir konum guncellenir.</li>
+                <li><strong>Kullanım Sırasında Konum:</strong> Uygulamayı aktif kullanırken konumunuzu alırız.</li>
+                <li><strong>Arka Plan Konumu:</strong> Canlı sürüş sırasında uygulama arka plandayken de konum takibi yaparız. Bu, diğer katılımcıların sizi haritada görmesi için gereklidir.</li>
+                <li><strong>Konum Hassasiyeti:</strong> GPS koordinatları (enlem, boylam), hız ve yön bilgisi.</li>
+                <li><strong>Güncelleme Sıklığı:</strong> Canlı sürüş sırasında her 5 saniyede bir konum güncellenir.</li>
             </ul>
         </div>
 
-        <h3>1.3 Kullanim Verileri</h3>
+        <h3>1.3 Kullanım Verileri</h3>
         <ul>
-            <li>Surus istatistikleri (mesafe, sure, ortalama hiz)</li>
-            <li>Kazanilan rozetler ve puanlar</li>
-            <li>Uygulama kullanim kayitlari</li>
+            <li>Sürüş istatistikleri (mesafe, süre, ortalama hız)</li>
+            <li>Kazanılan rozetler ve puanlar</li>
+            <li>Uygulama kullanım kayıtları</li>
         </ul>
 
         <h3>1.4 Cihaz Bilgileri</h3>
         <ul>
-            <li>Cihaz turu ve isletim sistemi</li>
-            <li>Push bildirim token'i</li>
-            <li>Uygulama surumu</li>
+            <li>Cihaz türü ve işletim sistemi</li>
+            <li>Push bildirim token'ı</li>
+            <li>Uygulama sürümü</li>
         </ul>
 
-        <h2>2. Bilgileri Nasil Kullaniriz</h2>
-        <p>Topladigimiz bilgileri su amaclarla kullaniriz:</p>
+        <h2>2. Bilgileri Nasıl Kullanırız</h2>
+        <p>Topladığımız bilgileri şu amaçlarla kullanırız:</p>
         <ul>
-            <li><strong>Hizmet Sunumu:</strong> Grup surus takibi, kulup yonetimi ve sosyal ozellikleri saglamak</li>
-            <li><strong>Guvenlik:</strong> SOS acil durum sistemi, mola istekleri ve konum paylasimi</li>
-            <li><strong>Iletisim:</strong> Surus bildirimleri, kulup duyurulari ve onemli guncellemeler</li>
-            <li><strong>Iyilestirme:</strong> Uygulamayi gelistirmek ve kullanici deneyimini artirmak</li>
-            <li><strong>Istatistikler:</strong> Surus verilerini analiz etmek ve kisisel istatistikler sunmak</li>
+            <li><strong>Hizmet Sunumu:</strong> Grup sürüş takibi, kulüp yönetimi ve sosyal özellikleri sağlamak</li>
+            <li><strong>Güvenlik:</strong> SOS acil durum sistemi, mola istekleri ve konum paylaşımı</li>
+            <li><strong>İletişim:</strong> Sürüş bildirimleri, kulüp duyuruları ve önemli güncellemeler</li>
+            <li><strong>İyileştirme:</strong> Uygulamayı geliştirmek ve kullanıcı deneyimini artırmak</li>
+            <li><strong>İstatistikler:</strong> Sürüş verilerini analiz etmek ve kişisel istatistikler sunmak</li>
         </ul>
 
-        <h2>3. Bilgi Paylasimi</h2>
+        <h2>3. Bilgi Paylaşımı</h2>
 
-        <h3>3.1 Diger Kullanicilarla Paylasim</h3>
-        <p>Asagidaki bilgiler kulup uyeleriniz ve surus katilimcilariyla paylasilir:</p>
+        <h3>3.1 Diğer Kullanıcılarla Paylaşım</h3>
+        <p>Aşağıdaki bilgiler kulüp üyeleriniz ve sürüş katılımcılarıyla paylaşılır:</p>
         <ul>
             <li>Ad ve profil resmi</li>
-            <li>Canli surus sirasinda konum bilgisi</li>
-            <li>Motosiklet ve donanim bilgileri</li>
-            <li>Surus istatistikleri ve rozetler</li>
+            <li>Canlı sürüş sırasında konum bilgisi</li>
+            <li>Motosiklet ve donanım bilgileri</li>
+            <li>Sürüş istatistikleri ve rozetler</li>
         </ul>
 
-        <h3>3.2 Ucuncu Taraf Hizmetler</h3>
+        <h3>3.2 Üçüncü Taraf Hizmetler</h3>
         <table class="data-table">
             <thead>
                 <tr>
                     <th>Hizmet</th>
-                    <th>Amac</th>
-                    <th>Paylasilan Veri</th>
+                    <th>Amaç</th>
+                    <th>Paylaşılan Veri</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>Firebase Cloud Messaging</td>
                     <td>Push bildirimleri</td>
-                    <td>Cihaz token'i</td>
+                    <td>Cihaz token'ı</td>
                 </tr>
                 <tr>
                     <td>Google Maps / Apple Maps</td>
-                    <td>Harita gosterimi</td>
-                    <td>Konum koordinatlari</td>
+                    <td>Harita gösterimi</td>
+                    <td>Konum koordinatları</td>
                 </tr>
                 <tr>
                     <td>Expo Push Notifications</td>
-                    <td>Bildirim yonetimi</td>
+                    <td>Bildirim yönetimi</td>
                     <td>Cihaz bilgileri</td>
                 </tr>
             </tbody>
         </table>
 
         <h3>3.3 Yasal Gereklilikler</h3>
-        <p>Yasal zorunluluklar, mahkeme kararlari veya kamu otoritelerinin talepleri dogrultusunda bilgilerinizi paylasabiliriz.</p>
+        <p>Yasal zorunluluklar, mahkeme kararları veya kamu otoritelerinin talepleri doğrultusunda bilgilerinizi paylaşabiliriz.</p>
 
-        <h2>4. Veri Guvenligi</h2>
-        <p>Verilerinizi korumak icin asagidaki onlemleri aliriz:</p>
+        <h2>4. Veri Güvenliği</h2>
+        <p>Verilerinizi korumak için aşağıdaki önlemleri alırız:</p>
         <ul>
-            <li><strong>Sifreleme:</strong> Tum veri aktarimlari HTTPS uzerinden sifrelidir</li>
-            <li><strong>Kimlik Dogrulama:</strong> JWT token tabanli guvenli kimlik dogrulama</li>
-            <li><strong>Guvenli Depolama:</strong> Hassas bilgiler (token'lar) cihazda guvenli sekilde saklanir</li>
-            <li><strong>Erisim Kontrolu:</strong> Verilerinize yalnizca yetkili sistemler erisebilir</li>
+            <li><strong>Şifreleme:</strong> Tüm veri aktarımları HTTPS üzerinden şifrelidir</li>
+            <li><strong>Kimlik Doğrulama:</strong> JWT token tabanlı güvenli kimlik doğrulama</li>
+            <li><strong>Güvenli Depolama:</strong> Hassas bilgiler (token'lar) cihazda güvenli şekilde saklanır</li>
+            <li><strong>Erişim Kontrolü:</strong> Verilerinize yalnızca yetkili sistemler erişebilir</li>
         </ul>
 
         <h2>5. Veri Saklama</h2>
-        <p>Verilerinizi asagidaki surelerle saklariz:</p>
+        <p>Verilerinizi aşağıdaki sürelerle saklarız:</p>
         <ul>
-            <li><strong>Hesap Bilgileri:</strong> Hesabiniz aktif oldugu surece</li>
-            <li><strong>Surus Verileri:</strong> Istatistik amacli suresiz (anonimlestirilmis)</li>
-            <li><strong>Konum Verileri:</strong> Canli surus bitiminde gercek zamanli veriler silinir, surus ozeti saklanir</li>
+            <li><strong>Hesap Bilgileri:</strong> Hesabınız aktif olduğu sürece</li>
+            <li><strong>Sürüş Verileri:</strong> İstatistik amaçlı süresiz (anonimleştirilmiş)</li>
+            <li><strong>Konum Verileri:</strong> Canlı sürüş bitiminde gerçek zamanlı veriler silinir, sürüş özeti saklanır</li>
         </ul>
 
-        <h2>6. Haklariniz</h2>
-        <p>KVKK ve GDPR kapsaminda asagidaki haklara sahipsiniz:</p>
+        <h2>6. Haklarınız</h2>
+        <p>KVKK ve GDPR kapsamında aşağıdaki haklara sahipsiniz:</p>
         <ul>
-            <li><strong>Erisim Hakki:</strong> Hangi verilerinizi sakladigimizi ogrenme</li>
-            <li><strong>Duzeltme Hakki:</strong> Yanlis veya eksik bilgileri duzeltme</li>
-            <li><strong>Silme Hakki:</strong> Hesabinizi ve verilerinizi silme talebi</li>
-            <li><strong>Tasima Hakki:</strong> Verilerinizi indirme</li>
-            <li><strong>Itiraz Hakki:</strong> Veri islemeye itiraz etme</li>
+            <li><strong>Erişim Hakkı:</strong> Hangi verilerinizi sakladığımızı öğrenme</li>
+            <li><strong>Düzeltme Hakkı:</strong> Yanlış veya eksik bilgileri düzeltme</li>
+            <li><strong>Silme Hakkı:</strong> Hesabınızı ve verilerinizi silme talebi</li>
+            <li><strong>Taşıma Hakkı:</strong> Verilerinizi indirme</li>
+            <li><strong>İtiraz Hakkı:</strong> Veri işlemeye itiraz etme</li>
         </ul>
 
-        <h2>7. Cocuklarin Gizliligi</h2>
-        <p>Uygulamamiz 18 yas alti bireylere yonelik degildir. Bilerek 18 yasindan kucuk kullanicilardan veri toplamayiz. Eger bir cocugun bize kisisel bilgi sagladigini fark ederseniz, lutfen bizimle iletisime gecin.</p>
+        <h2>7. Çocukların Gizliliği</h2>
+        <p>Uygulamamız 18 yaş altı bireylere yönelik değildir. Bilerek 18 yaşından küçük kullanıcılardan veri toplamayız. Eğer bir çocuğun bize kişisel bilgi sağladığını fark ederseniz, lütfen bizimle iletişime geçin.</p>
 
-        <h2>8. Konum Izni Detaylari</h2>
+        <h2>8. Konum İzni Detayları</h2>
         <div class="highlight-box">
-            <h4>Neden Arka Plan Konum Izni Gerekli?</h4>
-            <p>Iron Riders, grup surus uygulamasidir. Canli surus sirasinda:</p>
+            <h4>Neden Arka Plan Konum İzni Gerekli?</h4>
+            <p>Iron Riders, grup sürüş uygulamasıdır. Canlı sürüş sırasında:</p>
             <ul>
-                <li>Diger katilimcilar sizin konumunuzu gorebilmeli</li>
-                <li>Lider tum grubu haritada takip edebilmeli</li>
-                <li>SOS durumunda konumunuz aninda paylasilmali</li>
+                <li>Diğer katılımcılar sizin konumunuzu görebilmeli</li>
+                <li>Lider tüm grubu haritada takip edebilmeli</li>
+                <li>SOS durumunda konumunuz anında paylaşılmalı</li>
             </ul>
-            <p>Bu nedenle, surus sirasinda uygulama arka planda olsa bile konum takibi gereklidir. Surus disinda arka plan konumu kullanilmaz.</p>
+            <p>Bu nedenle, sürüş sırasında uygulama arka planda olsa bile konum takibi gereklidir. Sürüş dışında arka plan konumu kullanılmaz.</p>
         </div>
 
-        <h2>9. Degisiklikler</h2>
-        <p>Bu Gizlilik Politikasini zaman zaman guncelleyebiliriz. Onemli degisikliklerde sizi uygulama icinden veya e-posta ile bilgilendiririz. Guncel surumu her zaman bu sayfada bulabilirsiniz.</p>
+        <h2>9. Değişiklikler</h2>
+        <p>Bu Gizlilik Politikasını zaman zaman güncelleyebiliriz. Önemli değişikliklerde sizi uygulama içinden veya e-posta ile bilgilendiririz. Güncel sürümü her zaman bu sayfada bulabilirsiniz.</p>
 
-        <h2>10. Iletisim</h2>
+        <h2>10. İletişim</h2>
         <div class="contact-box">
-            <h3>Sorulariniz mi var?</h3>
-            <p>Gizlilik politikamiz veya verilerinizle ilgili sorulariniz icin bizimle iletisime gecebilirsiniz:</p>
+            <h3>Sorularınız mı var?</h3>
+            <p>Gizlilik politikamız veya verilerinizle ilgili sorularınız için bizimle iletişime geçebilirsiniz:</p>
             <ul>
-                <li><strong>E-posta:</strong> <a href="mailto:privacy@ironriders.app">privacy@ironriders.app</a></li>
-                <li><strong>Destek:</strong> <a href="mailto:support@ironriders.app">support@ironriders.app</a></li>
+                <li><strong>E-posta:</strong> <a href="mailto:uygaruludag@istechlabs.com">uygaruludag@istechlabs.com</a></li>
             </ul>
         </div>
     </main>
 
     <footer>
         <p>
-            &copy; 2025 Iron Riders &middot;
-            <a href="/privacy/">Gizlilik</a> &middot;
-            <a href="/terms/">Kosullar</a> &middot;
+            &copy; 2025 Istech Yazılım ve Danışmanlık ·
+            <a href="/privacy/">Gizlilik</a> ·
+            <a href="/terms/">Koşullar</a> ·
             <a href="/">Ana Sayfa</a>
         </p>
     </footer>

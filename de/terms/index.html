@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Iron Riders Nutzungsbedingungen - Regeln für die Nutzung der Anwendung">
+    <title>Nutzungsbedingungen - Iron Riders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --primary: #e63946; --bg-dark: #1a1a2e; --bg-darker: #0f0f1a; --text: #ffffff; --text-muted: #a0a0b0; --card-bg: rgba(255, 255, 255, 0.05); --border: rgba(255, 255, 255, 0.1); }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--bg-darker); color: var(--text); line-height: 1.7; }
+        header { padding: 1rem 2rem; background: rgba(15, 15, 26, 0.95); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 100; }
+        nav { max-width: 900px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.25rem; font-weight: 700; color: var(--primary); text-decoration: none; }
+        .nav-right { display: flex; align-items: center; gap: 1.5rem; }
+        .back-link { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; transition: color 0.3s; }
+        .back-link:hover { color: var(--text); }
+        .lang-switcher { display: flex; gap: 0.5rem; }
+        .lang-switcher a { padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.85rem; color: var(--text-muted); text-decoration: none; }
+        .lang-switcher a.active { background: var(--primary); color: white; }
+        main { max-width: 900px; margin: 0 auto; padding: 3rem 2rem 6rem; }
+        h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .last-updated { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 3rem; }
+        .intro { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+        h2 { font-size: 1.5rem; font-weight: 600; margin-top: 3rem; margin-bottom: 1rem; color: var(--primary); }
+        h3 { font-size: 1.1rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        p { margin-bottom: 1rem; color: var(--text-muted); }
+        ul, ol { margin-bottom: 1rem; padding-left: 1.5rem; color: var(--text-muted); }
+        li { margin-bottom: 0.5rem; }
+        strong { color: var(--text); font-weight: 600; }
+        .highlight-box { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+        .highlight-box h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--text); }
+        .warning-box { background: rgba(230, 57, 70, 0.1); border: 1px solid rgba(230, 57, 70, 0.3); border-radius: 12px; padding: 1.5rem; margin: 1.5rem 0; }
+        .warning-box h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--primary); }
+        .contact-box { background: linear-gradient(135deg, rgba(230, 57, 70, 0.1) 0%, rgba(230, 57, 70, 0.05) 100%); border: 1px solid rgba(230, 57, 70, 0.2); border-radius: 12px; padding: 2rem; margin-top: 3rem; }
+        .contact-box h3 { color: var(--primary); margin-top: 0; }
+        .contact-box a { color: var(--primary); text-decoration: none; }
+        .contact-box a:hover { text-decoration: underline; }
+        footer { padding: 2rem; text-align: center; border-top: 1px solid var(--border); }
+        footer p { font-size: 0.85rem; }
+        footer a { color: var(--text-muted); text-decoration: none; }
+        footer a:hover { color: var(--text); }
+        @media (max-width: 640px) { h1 { font-size: 1.75rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/de/" class="logo">Iron Riders</a>
+            <div class="nav-right">
+                <a href="/de/" class="back-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+                    Startseite
+                </a>
+                <div class="lang-switcher">
+                    <a href="/terms/">TR</a>
+                    <a href="/en/terms/">EN</a>
+                    <a href="/de/terms/" class="active">DE</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Nutzungsbedingungen</h1>
+        <p class="last-updated">Letzte Aktualisierung: 6. Januar 2025</p>
+
+        <p class="intro">Durch die Nutzung der Iron Riders Mobile-Anwendung ("App") stimmen Sie den folgenden Nutzungsbedingungen zu. Bitte lesen Sie diese Bedingungen sorgfältig durch. Wenn Sie diesen Bedingungen nicht zustimmen, nutzen Sie die Anwendung nicht.</p>
+
+        <h2>1. Servicebeschreibung</h2>
+        <p>Iron Riders ist eine Gruppenfahrt-Management-Anwendung für Motorradclubs. Die App bietet folgende Dienste:</p>
+        <ul>
+            <li>Gruppenfahrt-Planung und -Verwaltung</li>
+            <li>Live-Standortverfolgung und -freigabe</li>
+            <li>Club-Erstellung und Mitgliederverwaltung</li>
+            <li>SOS-Notfallsystem</li>
+            <li>Pausenanfragen und Kommunikation</li>
+            <li>Fahrtenstatistiken und Abzeichen</li>
+        </ul>
+
+        <h2>2. Kontoerstellung und Sicherheit</h2>
+
+        <h3>2.1 Registrierungsanforderungen</h3>
+        <ul>
+            <li>Sie müssen 18 Jahre oder älter sein, um die Anwendung zu nutzen</li>
+            <li>Sie müssen sich mit einer gültigen Telefonnummer registrieren</li>
+            <li>Sie sind verpflichtet, genaue und aktuelle Informationen anzugeben</li>
+        </ul>
+
+        <h3>2.2 Kontosicherheit</h3>
+        <ul>
+            <li>Sie sind für die Sicherheit Ihres Kontos verantwortlich</li>
+            <li>Teilen Sie Ihr Konto nicht mit anderen</li>
+            <li>Benachrichtigen Sie uns sofort, wenn Sie verdächtige Aktivitäten bemerken</li>
+        </ul>
+
+        <h2>3. Nutzungsregeln</h2>
+
+        <h3>3.1 Akzeptable Nutzung</h3>
+        <p>Sie dürfen die Anwendung für folgende Zwecke nutzen:</p>
+        <ul>
+            <li>Planung und Verwaltung von Motorrad-Gruppenfahrten</li>
+            <li>Kommunikation mit Club-Mitgliedern</li>
+            <li>Standortfreigabe während Fahrten</li>
+            <li>Nutzung des SOS-Systems in Notfällen</li>
+        </ul>
+
+        <h3>3.2 Verbotene Nutzung</h3>
+        <div class="warning-box">
+            <h4>Folgende Verhaltensweisen sind streng verboten:</h4>
+            <ul>
+                <li>Weitergabe falscher oder irreführender Informationen</li>
+                <li>Unnötige oder falsche Nutzung des SOS-Systems</li>
+                <li>Belästigung oder Bedrohung anderer Benutzer</li>
+                <li>Nutzung der App für illegale Aktivitäten</li>
+                <li>Gefährdung der Systemsicherheit oder Hackversuche</li>
+                <li>Teilen von Spam oder unerwünschten Inhalten</li>
+                <li>Identitätsdiebstahl</li>
+                <li>Kommerzielle Nutzung der App ohne Genehmigung</li>
+            </ul>
+        </div>
+
+        <h2>4. Standortdienste</h2>
+
+        <div class="highlight-box">
+            <h4>Wichtige Information</h4>
+            <p>Die App benötigt Standortberechtigung für ihre Kernfunktionen. Für die Live-Fahrt-Funktion ist die Hintergrund-Standortberechtigung erforderlich. Ihre Standortdaten:</p>
+            <ul>
+                <li>Werden nur während Fahrten mit Ihren Club-Mitgliedern geteilt</li>
+                <li>Werden in SOS-Situationen automatisch geteilt</li>
+                <li>Werden außerhalb von Fahrten nicht im Hintergrund erfasst</li>
+            </ul>
+        </div>
+
+        <h2>5. Club- und Fahrtenverwaltung</h2>
+
+        <h3>5.1 Club erstellen</h3>
+        <ul>
+            <li>E-Mail- oder Telefonverifizierung ist erforderlich, um einen Club zu erstellen</li>
+            <li>Der Club-Name muss angemessen und nicht irreführend sein</li>
+            <li>Der Club-Gründer ist für Club-Aktivitäten verantwortlich</li>
+        </ul>
+
+        <h3>5.2 Verantwortlichkeiten des Fahrtenleiters</h3>
+        <ul>
+            <li>Fahrten sicher planen</li>
+            <li>Teilnehmer informieren</li>
+            <li>In Notfällen angemessene Maßnahmen ergreifen</li>
+            <li>Pausenanfragen bewerten</li>
+        </ul>
+
+        <h3>5.3 Verantwortlichkeiten der Teilnehmer</h3>
+        <ul>
+            <li>Verkehrsregeln befolgen</li>
+            <li>Anweisungen des Fahrtenleiters befolgen</li>
+            <li>SOS-System in Notfällen korrekt nutzen</li>
+            <li>Andere Teilnehmer respektieren</li>
+        </ul>
+
+        <h2>6. Notfall (SOS) System</h2>
+
+        <div class="warning-box">
+            <h4>SOS-System Nutzung</h4>
+            <ul>
+                <li>Der SOS-Button sollte NUR in echten Notfällen verwendet werden</li>
+                <li>Das Senden falscher SOS-Signale kann zur Kontosperrung führen</li>
+                <li>SOS ersetzt keine professionellen Notfalldienste (112)</li>
+                <li>Rufen Sie bei schweren Unfällen immer die offiziellen Notdienste an</li>
+            </ul>
+        </div>
+
+        <h2>7. Geistiges Eigentum</h2>
+        <p>Alle Inhalte, Designs, Logos, Software und andere Materialien in der App sind Eigentum von oder an Iron Riders lizenziert. Unbefugtes Kopieren, Verbreiten oder Ändern ist verboten.</p>
+
+        <h2>8. Haftungsbeschränkung</h2>
+
+        <div class="highlight-box">
+            <h4>Wichtiger Hinweis</h4>
+            <p>Iron Riders:</p>
+            <ul>
+                <li>Ist nicht verantwortlich für Unfälle, Verletzungen oder Todesfälle während Motorradfahrten</li>
+                <li>Garantiert nicht 100% Genauigkeit der Standortdaten</li>
+                <li>Garantiert nicht den unterbrechungsfreien Betrieb von Drittanbieter-Diensten (Karten, Benachrichtigungen)</li>
+                <li>Ist nicht verantwortlich für Streitigkeiten zwischen Benutzern</li>
+                <li>Übernimmt keine Haftung für technische Ausfälle oder Datenverlust</li>
+            </ul>
+        </div>
+
+        <p><strong>Motorradfahren ist eine gefährliche Aktivität.</strong> Durch die Nutzung unserer App akzeptieren Sie diese Risiken. Priorisieren Sie immer sicheres Fahren, tragen Sie Schutzausrüstung und befolgen Sie die Verkehrsregeln.</p>
+
+        <h2>9. Kontosperrung und Kündigung</h2>
+
+        <h3>9.1 Durch uns</h3>
+        <p>Wir können Ihr Konto in folgenden Fällen sperren oder löschen:</p>
+        <ul>
+            <li>Verstoß gegen Nutzungsbedingungen</li>
+            <li>Senden falscher SOS-Signale</li>
+            <li>Belästigung anderer Benutzer</li>
+            <li>Illegale Aktivitäten</li>
+        </ul>
+
+        <h3>9.2 Durch Sie</h3>
+        <p>Sie können Ihr Konto jederzeit löschen. Nutzen Sie dazu die Option in der App oder kontaktieren Sie <a href="mailto:uygaruludag@istechlabs.com">uygaruludag@istechlabs.com</a>.</p>
+
+        <h2>10. Änderungen</h2>
+        <p>Wir können diese Nutzungsbedingungen von Zeit zu Zeit aktualisieren. Bei wesentlichen Änderungen:</p>
+        <ul>
+            <li>Erhalten Sie eine Benachrichtigung in der App</li>
+            <li>Werden Sie per E-Mail informiert</li>
+            <li>Die weitere Nutzung der App nach Veröffentlichung der Änderungen bedeutet, dass Sie die neuen Bedingungen akzeptieren</li>
+        </ul>
+
+        <h2>11. Streitbeilegung</h2>
+        <p>Streitigkeiten aus diesen Bedingungen:</p>
+        <ul>
+            <li>Werden zunächst eine gütliche Lösung suchen</li>
+            <li>Falls nicht gelöst, sind Gerichte der Republik Türkei zuständig</li>
+            <li>Türkisches Recht gilt</li>
+        </ul>
+
+        <h2>12. Kontakt</h2>
+        <div class="contact-box">
+            <h3>Haben Sie Fragen?</h3>
+            <p>Bei Fragen zu den Nutzungsbedingungen kontaktieren Sie uns bitte:</p>
+            <ul>
+                <li><strong>E-Mail:</strong> <a href="mailto:uygaruludag@istechlabs.com">uygaruludag@istechlabs.com</a></li>
+            </ul>
+        </div>
+
+        <h2>13. Schlussbestimmungen</h2>
+        <ul>
+            <li>Wenn eine Bestimmung dieser Bedingungen für ungültig erklärt wird, bleiben die anderen Bestimmungen gültig</li>
+            <li>Die Nichtausübung eines Rechts stellt keinen Verzicht auf dieses Recht dar</li>
+            <li>Diese Bedingungen stellen die gesamte Vereinbarung zwischen Ihnen und uns dar</li>
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Istech Yazılım ve Danışmanlık · <a href="/de/privacy/">Datenschutz</a> · <a href="/de/terms/">Nutzungsbedingungen</a> · <a href="/de/">Startseite</a></p>
+    </footer>
+</body>
+</html>

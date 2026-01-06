@@ -3,18 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Iron Riders Kullanim Kosullari - Uygulamayi kullanirken uymaniz gereken kurallar">
-    <title>Kullanim Kosullari - Iron Riders</title>
+    <meta name="description" content="Iron Riders Kullanım Koşulları - Uygulamayı kullanırken uymanız gereken kurallar">
+    <title>Kullanım Koşulları - Iron Riders</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
             --primary: #e63946;
             --bg-dark: #1a1a2e;
@@ -24,14 +19,12 @@
             --card-bg: rgba(255, 255, 255, 0.05);
             --border: rgba(255, 255, 255, 0.1);
         }
-
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
             background: var(--bg-darker);
             color: var(--text);
             line-height: 1.7;
         }
-
         header {
             padding: 1rem 2rem;
             background: rgba(15, 15, 26, 0.95);
@@ -41,7 +34,6 @@
             top: 0;
             z-index: 100;
         }
-
         nav {
             max-width: 900px;
             margin: 0 auto;
@@ -49,14 +41,17 @@
             justify-content: space-between;
             align-items: center;
         }
-
         .logo {
             font-size: 1.25rem;
             font-weight: 700;
             color: var(--primary);
             text-decoration: none;
         }
-
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
         .back-link {
             color: var(--text-muted);
             text-decoration: none;
@@ -66,29 +61,37 @@
             gap: 0.5rem;
             transition: color 0.3s;
         }
-
-        .back-link:hover {
-            color: var(--text);
+        .back-link:hover { color: var(--text); }
+        .lang-switcher {
+            display: flex;
+            gap: 0.5rem;
         }
-
+        .lang-switcher a {
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+        .lang-switcher a.active {
+            background: var(--primary);
+            color: white;
+        }
         main {
             max-width: 900px;
             margin: 0 auto;
             padding: 3rem 2rem 6rem;
         }
-
         h1 {
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 0.5rem;
         }
-
         .last-updated {
             color: var(--text-muted);
             font-size: 0.9rem;
             margin-bottom: 3rem;
         }
-
         .intro {
             font-size: 1.1rem;
             color: var(--text-muted);
@@ -96,7 +99,6 @@
             padding-bottom: 2rem;
             border-bottom: 1px solid var(--border);
         }
-
         h2 {
             font-size: 1.5rem;
             font-weight: 600;
@@ -104,34 +106,20 @@
             margin-bottom: 1rem;
             color: var(--primary);
         }
-
         h3 {
             font-size: 1.1rem;
             font-weight: 600;
             margin-top: 1.5rem;
             margin-bottom: 0.75rem;
         }
-
-        p {
-            margin-bottom: 1rem;
-            color: var(--text-muted);
-        }
-
+        p { margin-bottom: 1rem; color: var(--text-muted); }
         ul, ol {
             margin-bottom: 1rem;
             padding-left: 1.5rem;
             color: var(--text-muted);
         }
-
-        li {
-            margin-bottom: 0.5rem;
-        }
-
-        strong {
-            color: var(--text);
-            font-weight: 600;
-        }
-
+        li { margin-bottom: 0.5rem; }
+        strong { color: var(--text); font-weight: 600; }
         .highlight-box {
             background: var(--card-bg);
             border: 1px solid var(--border);
@@ -139,14 +127,12 @@
             padding: 1.5rem;
             margin: 1.5rem 0;
         }
-
         .highlight-box h4 {
             font-size: 1rem;
             font-weight: 600;
             margin-bottom: 0.75rem;
             color: var(--text);
         }
-
         .warning-box {
             background: rgba(230, 57, 70, 0.1);
             border: 1px solid rgba(230, 57, 70, 0.3);
@@ -154,14 +140,12 @@
             padding: 1.5rem;
             margin: 1.5rem 0;
         }
-
         .warning-box h4 {
             font-size: 1rem;
             font-weight: 600;
             margin-bottom: 0.75rem;
             color: var(--primary);
         }
-
         .contact-box {
             background: linear-gradient(135deg, rgba(230, 57, 70, 0.1) 0%, rgba(230, 57, 70, 0.05) 100%);
             border: 1px solid rgba(230, 57, 70, 0.2);
@@ -169,44 +153,28 @@
             padding: 2rem;
             margin-top: 3rem;
         }
-
         .contact-box h3 {
             color: var(--primary);
             margin-top: 0;
         }
-
         .contact-box a {
             color: var(--primary);
             text-decoration: none;
         }
-
-        .contact-box a:hover {
-            text-decoration: underline;
-        }
-
+        .contact-box a:hover { text-decoration: underline; }
         footer {
             padding: 2rem;
             text-align: center;
             border-top: 1px solid var(--border);
         }
-
-        footer p {
-            font-size: 0.85rem;
-        }
-
+        footer p { font-size: 0.85rem; }
         footer a {
             color: var(--text-muted);
             text-decoration: none;
         }
-
-        footer a:hover {
-            color: var(--text);
-        }
-
+        footer a:hover { color: var(--text); }
         @media (max-width: 640px) {
-            h1 {
-                font-size: 1.75rem;
-            }
+            h1 { font-size: 1.75rem; }
         }
     </style>
 </head>
@@ -214,198 +182,204 @@
     <header>
         <nav>
             <a href="/" class="logo">Iron Riders</a>
-            <a href="/" class="back-link">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M19 12H5M12 19l-7-7 7-7"/>
-                </svg>
-                Ana Sayfa
-            </a>
+            <div class="nav-right">
+                <a href="/" class="back-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7"/>
+                    </svg>
+                    Ana Sayfa
+                </a>
+                <div class="lang-switcher">
+                    <a href="/terms/" class="active">TR</a>
+                    <a href="/en/terms/">EN</a>
+                    <a href="/de/terms/">DE</a>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-        <h1>Kullanim Kosullari</h1>
-        <p class="last-updated">Son guncelleme: 6 Ocak 2025</p>
+        <h1>Kullanım Koşulları</h1>
+        <p class="last-updated">Son güncelleme: 6 Ocak 2025</p>
 
         <p class="intro">
-            Iron Riders mobil uygulamasini ("Uygulama") kullanarak asagidaki kullanim kosullarini kabul etmis olursunuz.
-            Lutfen bu kosullari dikkatlice okuyun. Kosullari kabul etmiyorsaniz, uygulamayi kullanmayiniz.
+            Iron Riders mobil uygulamasını ("Uygulama") kullanarak aşağıdaki kullanım koşullarını kabul etmiş olursunuz.
+            Lütfen bu koşulları dikkatlice okuyun. Koşulları kabul etmiyorsanız, uygulamayı kullanmayınız.
         </p>
 
-        <h2>1. Hizmet Tanimi</h2>
-        <p>Iron Riders, motosiklet kulupleri icin tasarlanmis bir grup surus yonetim uygulamasidir. Uygulama asagidaki hizmetleri sunar:</p>
+        <h2>1. Hizmet Tanımı</h2>
+        <p>Iron Riders, motosiklet kulüpleri için tasarlanmış bir grup sürüş yönetim uygulamasıdır. Uygulama aşağıdaki hizmetleri sunar:</p>
         <ul>
-            <li>Grup surus planlama ve yonetimi</li>
-            <li>Canli konum takibi ve paylasimi</li>
-            <li>Kulup olusturma ve uye yonetimi</li>
+            <li>Grup sürüş planlama ve yönetimi</li>
+            <li>Canlı konum takibi ve paylaşımı</li>
+            <li>Kulüp oluşturma ve üye yönetimi</li>
             <li>SOS acil durum sistemi</li>
-            <li>Mola istekleri ve iletisim</li>
-            <li>Surus istatistikleri ve rozetler</li>
+            <li>Mola istekleri ve iletişim</li>
+            <li>Sürüş istatistikleri ve rozetler</li>
         </ul>
 
-        <h2>2. Hesap Olusturma ve Guvenlik</h2>
+        <h2>2. Hesap Oluşturma ve Güvenlik</h2>
 
-        <h3>2.1 Kayit Sartlari</h3>
+        <h3>2.1 Kayıt Şartları</h3>
         <ul>
-            <li>Uygulamayi kullanmak icin 18 yasindan buyuk olmalisiniz</li>
-            <li>Gecerli bir telefon numarasi ile kayit olmalisiniz</li>
-            <li>Dogru ve guncel bilgiler saglama yukumlulugunduruz</li>
+            <li>Uygulamayı kullanmak için 18 yaşından büyük olmalısınız</li>
+            <li>Geçerli bir telefon numarası ile kayıt olmalısınız</li>
+            <li>Doğru ve güncel bilgiler sağlama yükümlülüğündesiniz</li>
         </ul>
 
-        <h3>2.2 Hesap Guvenligi</h3>
+        <h3>2.2 Hesap Güvenliği</h3>
         <ul>
-            <li>Hesabinizin guvenliginden siz sorumlusunuz</li>
-            <li>Hesabinizi baskalarıyla paylasmayiniz</li>
-            <li>Supheli aktivite fark ederseniz derhal bize bildirin</li>
+            <li>Hesabınızın güvenliğinden siz sorumlusunuz</li>
+            <li>Hesabınızı başkalarıyla paylaşmayınız</li>
+            <li>Şüpheli aktivite fark ederseniz derhal bize bildirin</li>
         </ul>
 
-        <h2>3. Kullanim Kurallari</h2>
+        <h2>3. Kullanım Kuralları</h2>
 
-        <h3>3.1 Kabul Edilebilir Kullanim</h3>
-        <p>Uygulamayi asagidaki amaclarla kullanabilirsiniz:</p>
+        <h3>3.1 Kabul Edilebilir Kullanım</h3>
+        <p>Uygulamayı aşağıdaki amaçlarla kullanabilirsiniz:</p>
         <ul>
-            <li>Motosiklet grup suruslerini planlamak ve yonetmek</li>
-            <li>Kulup uyeleriyle iletisim kurmak</li>
-            <li>Surus sirasinda konum paylasiminda bulunmak</li>
+            <li>Motosiklet grup sürüşlerini planlamak ve yönetmek</li>
+            <li>Kulüp üyeleriyle iletişim kurmak</li>
+            <li>Sürüş sırasında konum paylaşımında bulunmak</li>
             <li>Acil durumlarda SOS sistemi kullanmak</li>
         </ul>
 
-        <h3>3.2 Yasaklanan Kullanim</h3>
+        <h3>3.2 Yasaklanan Kullanım</h3>
         <div class="warning-box">
-            <h4>Asagidaki davranislar kesinlikle yasaktir:</h4>
+            <h4>Aşağıdaki davranışlar kesinlikle yasaktır:</h4>
             <ul>
-                <li>Yanlis veya yaniltici bilgi paylasimi</li>
+                <li>Yanlış veya yanıltıcı bilgi paylaşımı</li>
                 <li>SOS sistemini gereksiz yere veya sahte olarak kullanmak</li>
-                <li>Diger kullanicilari taciz etmek veya tehdit etmek</li>
-                <li>Uygulamayi yasadisi faaliyetler icin kullanmak</li>
-                <li>Sistemin guvenligini tehlikeye atmak veya hacklemeye calismak</li>
-                <li>Spam veya istenmeyen icerik paylasmak</li>
-                <li>Baskasinin kimligini taklit etmek</li>
-                <li>Uygulamayi ticari amaclarla izinsiz kullanmak</li>
+                <li>Diğer kullanıcıları taciz etmek veya tehdit etmek</li>
+                <li>Uygulamayı yasadışı faaliyetler için kullanmak</li>
+                <li>Sistemin güvenliğini tehlikeye atmak veya hacklemeye çalışmak</li>
+                <li>Spam veya istenmeyen içerik paylaşmak</li>
+                <li>Başkasının kimliğini taklit etmek</li>
+                <li>Uygulamayı ticari amaçlarla izinsiz kullanmak</li>
             </ul>
         </div>
 
         <h2>4. Konum Hizmetleri</h2>
 
         <div class="highlight-box">
-            <h4>Onemli Bilgi</h4>
-            <p>Uygulama, temel islevleri icin konum izni gerektirir. Canli surus ozelligi icin arka plan konum izni gereklidir. Konum verileriniz:</p>
+            <h4>Önemli Bilgi</h4>
+            <p>Uygulama, temel işlevleri için konum izni gerektirir. Canlı sürüş özelliği için arka plan konum izni gereklidir. Konum verileriniz:</p>
             <ul>
-                <li>Yalnizca surus sirasinda kulup uyelerinizle paylasilir</li>
-                <li>SOS durumunda otomatik olarak paylasilir</li>
-                <li>Surus disinda arka planda toplanmaz</li>
+                <li>Yalnızca sürüş sırasında kulüp üyelerinizle paylaşılır</li>
+                <li>SOS durumunda otomatik olarak paylaşılır</li>
+                <li>Sürüş dışında arka planda toplanmaz</li>
             </ul>
         </div>
 
-        <h2>5. Kulup ve Surus Yonetimi</h2>
+        <h2>5. Kulüp ve Sürüş Yönetimi</h2>
 
-        <h3>5.1 Kulup Olusturma</h3>
+        <h3>5.1 Kulüp Oluşturma</h3>
         <ul>
-            <li>Kulup olusturmak icin e-posta veya telefon dogrulamasi gereklidir</li>
-            <li>Kulup adi uygun ve yaniltici olmamalidir</li>
-            <li>Kulup kurucusu, kulup aktivitelerinden sorumludur</li>
+            <li>Kulüp oluşturmak için e-posta veya telefon doğrulaması gereklidir</li>
+            <li>Kulüp adı uygun ve yanıltıcı olmamalıdır</li>
+            <li>Kulüp kurucusu, kulüp aktivitelerinden sorumludur</li>
         </ul>
 
-        <h3>5.2 Surus Liderinin Sorumluliklari</h3>
+        <h3>5.2 Sürüş Liderinin Sorumlulukları</h3>
         <ul>
-            <li>Surusu guvenli bir sekilde planlamak</li>
-            <li>Katilimcilari bilgilendirmek</li>
+            <li>Sürüşü güvenli bir şekilde planlamak</li>
+            <li>Katılımcıları bilgilendirmek</li>
             <li>Acil durumlarda uygun aksiyonu almak</li>
-            <li>Mola isteklerini degerlendirmek</li>
+            <li>Mola isteklerini değerlendirmek</li>
         </ul>
 
-        <h3>5.3 Katilimci Sorumluliklari</h3>
+        <h3>5.3 Katılımcı Sorumlulukları</h3>
         <ul>
-            <li>Trafik kurallarina uymak</li>
-            <li>Suruş liderinin talimatlarini takip etmek</li>
-            <li>Acil durumlarda SOS sistemini dogru kullanmak</li>
-            <li>Diger katilimcilara saygi gostermek</li>
+            <li>Trafik kurallarına uymak</li>
+            <li>Sürüş liderinin talimatlarını takip etmek</li>
+            <li>Acil durumlarda SOS sistemini doğru kullanmak</li>
+            <li>Diğer katılımcılara saygı göstermek</li>
         </ul>
 
         <h2>6. Acil Durum (SOS) Sistemi</h2>
 
         <div class="warning-box">
-            <h4>SOS Sistemi Kullanimi</h4>
+            <h4>SOS Sistemi Kullanımı</h4>
             <ul>
-                <li>SOS butonu SADECE gercek acil durumlarda kullanilmalidir</li>
-                <li>Sahte SOS sinyali gondermek hesap askiya alinmasina neden olabilir</li>
-                <li>SOS, profesyonel acil servisler (112) yerine gecmez</li>
-                <li>Ciddi kazalarda mutlaka resmi acil servisleri arayin</li>
+                <li>SOS butonu SADECE gerçek acil durumlarda kullanılmalıdır</li>
+                <li>Sahte SOS sinyali göndermek hesap askıya alınmasına neden olabilir</li>
+                <li>SOS, profesyonel acil servisler (112) yerine geçmez</li>
+                <li>Ciddi kazalarda mutlaka resmi acil servisleri arayın</li>
             </ul>
         </div>
 
-        <h2>7. Fikri Mulkiyet</h2>
-        <p>Uygulamadaki tum icerik, tasarim, logo, yazilim ve diger materyaller Iron Riders'a aittir veya lisanslidir. Izinsiz kopyalama, dagitma veya degistirme yasaktir.</p>
+        <h2>7. Fikri Mülkiyet</h2>
+        <p>Uygulamadaki tüm içerik, tasarım, logo, yazılım ve diğer materyaller Iron Riders'a aittir veya lisanslıdır. İzinsiz kopyalama, dağıtma veya değiştirme yasaktır.</p>
 
-        <h2>8. Sorumluluk Sinirlamasi</h2>
+        <h2>8. Sorumluluk Sınırlaması</h2>
 
         <div class="highlight-box">
-            <h4>Onemli Uyari</h4>
+            <h4>Önemli Uyarı</h4>
             <p>Iron Riders:</p>
             <ul>
-                <li>Motosiklet surusu sirasinda meydana gelen kaza, yaralanma veya olumlerden sorumlu degildir</li>
-                <li>Konum verilerinin %100 dogrulugunu garanti etmez</li>
-                <li>Ucuncu taraf hizmetlerinin (harita, bildirim) kesintisiz calismasini garanti etmez</li>
-                <li>Kullanicilarin birbirleriyle olan anlasmazliklarindan sorumlu degildir</li>
-                <li>Teknik arizalar veya veri kaybindan dolayi sorumluluk kabul etmez</li>
+                <li>Motosiklet sürüşü sırasında meydana gelen kaza, yaralanma veya ölümlerden sorumlu değildir</li>
+                <li>Konum verilerinin %100 doğruluğunu garanti etmez</li>
+                <li>Üçüncü taraf hizmetlerinin (harita, bildirim) kesintisiz çalışmasını garanti etmez</li>
+                <li>Kullanıcıların birbirleriyle olan anlaşmazlıklarından sorumlu değildir</li>
+                <li>Teknik arızalar veya veri kaybından dolayı sorumluluk kabul etmez</li>
             </ul>
         </div>
 
-        <p><strong>Motosiklet surmek tehlikeli bir aktivitedir.</strong> Uygulamamizi kullanmaniz, bu riskleri kabul ettiginiz anlamina gelir. Her zaman guvenli suruse oncelik verin, koruyucu ekipman kullanin ve trafik kurallarina uyun.</p>
+        <p><strong>Motosiklet sürmek tehlikeli bir aktivitedir.</strong> Uygulamamızı kullanmanız, bu riskleri kabul ettiğiniz anlamına gelir. Her zaman güvenli sürüşe öncelik verin, koruyucu ekipman kullanın ve trafik kurallarına uyun.</p>
 
-        <h2>9. Hesap Askiya Alma ve Fesih</h2>
+        <h2>9. Hesap Askıya Alma ve Fesih</h2>
 
-        <h3>9.1 Bizim Tarafimizdan</h3>
-        <p>Asagidaki durumlarda hesabinizi askiya alabilir veya silebiliriz:</p>
+        <h3>9.1 Bizim Tarafımızdan</h3>
+        <p>Aşağıdaki durumlarda hesabınızı askıya alabilir veya silebiliriz:</p>
         <ul>
-            <li>Kullanim kosullarinin ihlali</li>
-            <li>Sahte SOS sinyali gonderimi</li>
-            <li>Diger kullanicilara yonelik taciz</li>
-            <li>Yasadisi faaliyetler</li>
+            <li>Kullanım koşullarının ihlali</li>
+            <li>Sahte SOS sinyali gönderimi</li>
+            <li>Diğer kullanıcılara yönelik taciz</li>
+            <li>Yasadışı faaliyetler</li>
         </ul>
 
-        <h3>9.2 Sizin Tarafinizdan</h3>
-        <p>Hesabinizi istediginiz zaman silebilirsiniz. Hesap silme islemi icin uygulama icinden veya <a href="mailto:support@ironriders.app">support@ironriders.app</a> adresinden talepte bulunabilirsiniz.</p>
+        <h3>9.2 Sizin Tarafınızdan</h3>
+        <p>Hesabınızı istediğiniz zaman silebilirsiniz. Hesap silme işlemi için uygulama içinden veya <a href="mailto:support@ironriders.app">support@ironriders.app</a> adresinden talepte bulunabilirsiniz.</p>
 
-        <h2>10. Degisiklikler</h2>
-        <p>Bu kullanim kosullarini zaman zaman guncelleyebiliriz. Onemli degisiklikler yapildiginda:</p>
+        <h2>10. Değişiklikler</h2>
+        <p>Bu kullanım koşullarını zaman zaman güncelleyebiliriz. Önemli değişiklikler yapıldığında:</p>
         <ul>
-            <li>Uygulama icinde bildirim gonderilecektir</li>
+            <li>Uygulama içinde bildirim gönderilecektir</li>
             <li>E-posta ile bilgilendirileceksiniz</li>
-            <li>Degisiklikler yayinlandiktan sonra uygulamayi kullanmaya devam etmeniz, yeni kosullari kabul ettiginiz anlamina gelir</li>
+            <li>Değişiklikler yayınlandıktan sonra uygulamayı kullanmaya devam etmeniz, yeni koşulları kabul ettiğiniz anlamına gelir</li>
         </ul>
 
-        <h2>11. Uyusmazlik Cozumu</h2>
-        <p>Bu kosullardan kaynaklanan uyusmazliklar:</p>
+        <h2>11. Uyuşmazlık Çözümü</h2>
+        <p>Bu koşullardan kaynaklanan uyuşmazlıklar:</p>
         <ul>
-            <li>Once dostane cozum yolu aranacaktir</li>
-            <li>Cozum bulunamazsa Turkiye Cumhuriyeti mahkemeleri yetkilidir</li>
-            <li>Uygulanacak hukuk Turk hukukudur</li>
+            <li>Önce dostane çözüm yolu aranacaktır</li>
+            <li>Çözüm bulunamazsa Türkiye Cumhuriyeti mahkemeleri yetkilidir</li>
+            <li>Uygulanacak hukuk Türk hukukudur</li>
         </ul>
 
-        <h2>12. Iletisim</h2>
+        <h2>12. İletişim</h2>
         <div class="contact-box">
-            <h3>Sorulariniz mi var?</h3>
-            <p>Kullanim kosullariyla ilgili sorulariniz icin bizimle iletisime gecebilirsiniz:</p>
+            <h3>Sorularınız mı var?</h3>
+            <p>Kullanım koşullarıyla ilgili sorularınız için bizimle iletişime geçebilirsiniz:</p>
             <ul>
-                <li><strong>E-posta:</strong> <a href="mailto:legal@ironriders.app">legal@ironriders.app</a></li>
-                <li><strong>Destek:</strong> <a href="mailto:support@ironriders.app">support@ironriders.app</a></li>
+                <li><strong>E-posta:</strong> <a href="mailto:uygaruludag@istechlabs.com">uygaruludag@istechlabs.com</a></li>
             </ul>
         </div>
 
-        <h2>13. Son Hukumler</h2>
+        <h2>13. Son Hükümler</h2>
         <ul>
-            <li>Bu kosullarin herhangi bir hukmu gecersiz sayilirsa, diger hukumler gecerliligini korur</li>
-            <li>Herhangi bir hakkin kullanilmamasi, o haktan feragat anlamina gelmez</li>
-            <li>Bu kosullar, sizinle aramizda yapilan tam anlasmayi olusturur</li>
+            <li>Bu koşulların herhangi bir hükmü geçersiz sayılırsa, diğer hükümler geçerliliğini korur</li>
+            <li>Herhangi bir hakkın kullanılmaması, o haktan feragat anlamına gelmez</li>
+            <li>Bu koşullar, sizinle aramızda yapılan tam anlaşmayı oluşturur</li>
         </ul>
     </main>
 
     <footer>
         <p>
-            &copy; 2025 Iron Riders &middot;
-            <a href="/privacy/">Gizlilik</a> &middot;
-            <a href="/terms/">Kosullar</a> &middot;
+            &copy; 2025 Istech Yazılım ve Danışmanlık ·
+            <a href="/privacy/">Gizlilik</a> ·
+            <a href="/terms/">Koşullar</a> ·
             <a href="/">Ana Sayfa</a>
         </p>
     </footer>
